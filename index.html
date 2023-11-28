@@ -10,24 +10,24 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #4A90E2, #63D8F5);
-            color: #333;
+            background: linear-gradient(to right, #374b58, #6b4869);
+            color: #fff;
             line-height: 1.6;
         }
 
         header {
-            background: linear-gradient(to right, #007BFF, #00BFFF);
+            background: linear-gradient(to right, #4a90e2, #63d8f5);
             color: #fff;
             text-align: center;
             padding: 20px;
         }
 
         h1, h2 {
-            color: #007BFF;
+            color: #4a90e2;
         }
 
         nav {
-            background: linear-gradient(to right, #343a40, #6c757d);
+            background: linear-gradient(to right, #333, #666);
             padding: 10px;
             text-align: center;
         }
@@ -38,12 +38,13 @@
             padding: 10px 20px;
             margin: 0 5px;
             border-radius: 4px;
-            background: linear-gradient(to right, #007BFF, #0056b3);
+            background: linear-gradient(to right, #4a90e2, #0066cc);
         }
 
         nav a:hover {
-            background: linear-gradient(to right, #0056b3, #004080);
+            background: linear-gradient(to right, #0066cc, #004080);
         }
+
 
         section {
             background-color: #fff;
@@ -73,9 +74,104 @@
             color: #007BFF;
         }
 
-        /* Resto de los estilos ... */
 
     </style>
+    <style>
+    /* Estilos adicionales para animaciones y diseño general */
+
+    .btn-primary {
+        background-color: #4a90e2;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover {
+        background-color: #007bff;
+    }
+
+    .view-cart {
+        background-color: #28a745;
+        color: #fff;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 20px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .view-cart:hover {
+        background-color: #218838;
+    }
+
+    /* Agrega más estilos y animaciones según sea necesario */
+
+</style>
+<style>
+    /* Estilos mejorados para la barra de navegación y menú desplegable */
+
+    nav {
+        background: linear-gradient(to right, #343a40, #6c757d);
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        border-radius: 4px;
+        background: linear-gradient(to right, #4a90e2, #0066cc);
+        transition: background 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+        background: linear-gradient(to right, #0066cc, #004080);
+    }
+
+    /* Menú desplegable */
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: #333;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: background 0.3s ease-in-out;
+    }
+
+    .dropdown-content a:hover {
+        background: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+</style>
+
+
+
 </head>
 <body>
 
@@ -88,12 +184,24 @@
         <a href="#">Productos</a>
         <a href="#">Contacto</a>
     </nav>
-<section>
+<section class="banner-section">
+    <div class="banner-content">
+        <h2>Bienvenido a ForgeLab</h2>
+        <p>Tu ferretería de confianza para todas tus necesidades de construcción y reparación. Descubre nuestra amplia gama de productos de alta calidad.</p>
+        <a href="#" class="btn-primary">Explorar Productos</a>
+    </div>
+</section>
+
+<section class="about-section">
+    <h2>Acerca de Nosotros</h2>
+    <p>Somos ForgeLab, una ferretería comprometida con la excelencia y la satisfacción del cliente. Nuestra misión es proporcionar productos de calidad para tus proyectos de construcción y bricolaje.</p>
+</section>
+<section class="featured-products">
     <h2>Productos Destacados</h2>
 
     <div class="product">
-        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.stickpng.com%2Fes%2Fimg%2Fherramientos-y-partes%2Fmartillos%2Fmartillo-de-metal-aislado&psig=AOvVaw1LFfGK8mtdnededHLe0eA4&ust=1701238242570000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLDE9bqE5oIDFQAAAAAdAAAAABAE" target="_blank">
-            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.stickpng.com%2Fes%2Fimg%2Fherramientos-y-partes%2Fmartillos%2Fmartillo-de-metal-aislado&psig=AOvVaw1LFfGK8mtdnededHLe0eA4&ust=1701238242570000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLDE9bqE5oIDFQAAAAAdAAAAABAE" alt="Martillo">
+        <a href="https://www.stickpng.com/es/img/herramientos-y-partes/martillos/martillo-de-metal-aislado" target="_blank">
+            <img src="https://www.stickpng.com/es/img/herramientos-y-partes/martillos/martillo-de-metal-aislado" alt="Martillo">
         </a>
         <h3>Martillo</h3>
         <p>Un martillo de alta calidad para todas tus necesidades de construcción y reparación.</p>
@@ -109,8 +217,8 @@
     </div>
 
     <div class="product">
-        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fes%2Ffree-png-ynbed&psig=AOvVaw04stgpU8xbjRZuUdLZUMKa&ust=1701238357348000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMDr2vGE5oIDFQAAAAAdAAAAABAw" target="_blank">
-            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fes%2Ffree-png-ynbed&psig=AOvVaw04stgpU8xbjRZuUdLZUMKa&ust=1701238357348000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMDr2vGE5oIDFQAAAAAdAAAAABAw" alt="Taladro Eléctrico">
+        <a href="https://www.pngwing.com/es/free-png-ynbed" target="_blank">
+            <img src="https://www.pngwing.com/es/free-png-ynbed" alt="Taladro Eléctrico">
         </a>
         <h3>Taladro Eléctrico</h3>
         <p>Realiza perforaciones precisas con nuestro taladro eléctrico potente y duradero.</p>
@@ -128,31 +236,208 @@
     <!-- Agrega más productos según sea necesario -->
 
 </section>
-<script>
-    function addToCart(productName, price, quantityId) {
-        const quantity = document.getElementById(quantityId).value;
-        const total = price * quantity;
+<style>
+    /* Estilos mejorados para productos y otras secciones */
 
-        // Aquí puedes implementar la lógica para agregar al carrito
-        console.log(`Agregado al carrito: ${quantity} ${productName}(s) - Total: S/ ${total.toFixed(2)}`);
+    .featured-products {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
-</script>
+
+    .product {
+        width: 300px;
+        margin: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .product:hover {
+        transform: scale(1.05);
+    }
+
+    .quantity-select, .add-to-cart {
+        margin-top: 10px;
+    }
+
+    /* Nuevos estilos para la sección de servicios */
+
+    .services-section {
+        background-color: #f4f4f4;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .service {
+        margin: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .service:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .service img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+</style>
+
+<section class="services-section">
+    <h2>Nuestros Servicios</h2>
+
+    <div class="service">
+        <img src="https://www.example.com/servicio1.jpg" alt="Servicio 1">
+        <h3>Servicio 1</h3>
+        <p>Descripción del servicio 1.</p>
+    </div>
+
+    <div class="service">
+        <img src="https://www.example.com/servicio2.jpg" alt="Servicio 2">
+        <h3>Servicio 2</h3>
+        <p>Descripción del servicio 2.</p>
+    </div>
+
+    <!-- Agrega más servicios según sea necesario -->
+
+</section>
+<style>
+    /* Estilos para la sección de testimonios */
+
+    .testimonials-section {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .testimonial {
+        width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #4a90e2;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .testimonial:hover {
+        background-color: #007bff;
+    }
+
+    .testimonial p {
+        font-style: italic;
+        margin-top: 10px;
+    }
+
+    .testimonial-author {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+</style>
+
+<section class="testimonials-section">
+    <h2>Lo que dicen nuestros clientes</h2>
+
+    <div class="testimonial">
+        <p>"Excelente servicio y productos de alta calidad. Siempre encuentro lo que necesito en ForgeLab."</p>
+        <p class="testimonial-author">Juan Pérez</p>
+    </div>
+
+    <div class="testimonial">
+        <p>"Me encanta la variedad de herramientas disponibles. ¡Los precios son muy competitivos!"</p>
+        <p class="testimonial-author">María Gómez</p>
+    </div>
+
+    <!-- Agrega más testimonios según sea necesario -->
+
+</section>
+<style>
+    /* Estilos para la sección de contacto */
+
+    .contact-section {
+        background-color: #fff;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .contact-form label {
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .contact-form button {
+        background-color: #4a90e2;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .contact-form button:hover {
+        background-color: #007bff;
+    }
+
+    /* Estilos para el pie de página */
+
+    footer {
+        background: linear-gradient(to right, #4a90e2, #63d8f5);
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+</style>
 
 <section class="contact-section">
     <h2>Contacto</h2>
-    <p>
-        ¿Necesitas ayuda o información adicional? ¡Contáctanos en
-        <a href="mailto:info@forgelab.com">info@forgelab.com</a> o llámanos al
-        <a href="tel:+51957447114">+51 957447114</a>.
-    </p>
-    <p>Consulta nuestras <a href="politicas_privacidad.html">Políticas de Privacidad</a>.</p>
+
+    <div class="contact-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Enviar Mensaje</button>
+    </div>
+
 </section>
 
-<div class="highlight">
-    <p><strong>Nota:</strong> Esta página es solo un ejemplo y no refleja necesariamente los productos reales de ForgeLab. Asegúrate de personalizarla según tus necesidades.</p>
-</div>
-
-<a href="#" class="view-cart">Ver Carrito de Compras</a>
+<footer>
+    <p>&copy; 2023 ForgeLab - Tu Ferretería de Confianza</p>
+</footer>
 
 </body>
 </html>
+
