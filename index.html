@@ -22,10 +22,18 @@
             padding: 20px;
         }
 
-        h1, h2 {
-            color: #4a90e2;
+        h1 {
+            font-family: 'Your Preferred Font', sans-serif; /* Reemplaza 'Your Preferred Font' con la fuente que desees */
+            font-size: 36px;
+            margin: 0;
         }
 
+        #logo {
+            width: 100px; /* Ajusta el tamaño según sea necesario */
+            height: auto;
+            display: block;
+            margin: 0 auto 20px; /* Centra el logo */
+        }
         nav {
             background: linear-gradient(to right, #333, #666);
             padding: 10px;
@@ -175,8 +183,9 @@
 </head>
 <body>
 
-    <header>
-        <h1>ForgeLab - Tu Ferretería de Confianza</h1>
+     <header>
+        <img id="logo" src="logo.png" alt="ForgeLab Logo">
+        <h1>ForgeLab</h1>
     </header>
 
     <nav>
