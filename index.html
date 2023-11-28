@@ -10,13 +10,13 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background: linear-gradient(to right, #4A90E2, #63D8F5);
             color: #333;
             line-height: 1.6;
         }
 
         header {
-            background-color: #007BFF;
+            background: linear-gradient(to right, #007BFF, #00BFFF);
             color: #fff;
             text-align: center;
             padding: 20px;
@@ -27,7 +27,7 @@
         }
 
         nav {
-            background-color: #343a40;
+            background: linear-gradient(to right, #343a40, #6c757d);
             padding: 10px;
             text-align: center;
         }
@@ -38,11 +38,11 @@
             padding: 10px 20px;
             margin: 0 5px;
             border-radius: 4px;
-            background-color: #007BFF;
+            background: linear-gradient(to right, #007BFF, #0056b3);
         }
 
         nav a:hover {
-            background-color: #0056b3;
+            background: linear-gradient(to right, #0056b3, #004080);
         }
 
         section {
@@ -66,64 +66,14 @@
             height: auto;
             border-radius: 8px;
             margin-bottom: 10px;
+            cursor: pointer;
         }
 
         .product h3 {
             color: #007BFF;
         }
 
-        /* Estilo para enlaces */
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Estilo para sección de contacto */
-        .contact-section {
-            background-color: #e6f7ff;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        /* Estilo para detalles visuales adicionales */
-        .highlight {
-            background-color: #fff3cd;
-            padding: 10px;
-            border-radius: 4px;
-        }
-
-        /* Estilo para botones */
-        .add-to-cart {
-            background-color: #28a745;
-            color: #fff;
-            padding: 8px 16px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-
-        .view-cart {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 8px 16px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-            margin-top: 10px;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        /* Estilo para el menú desplegable */
-        .quantity-select {
-            padding: 8px;
-            border: 1px solid #ced4da;
-            border-radius: 4px;
-            margin-right: 10px;
-        }
+        /* Resto de los estilos ... */
 
     </style>
 </head>
@@ -138,70 +88,71 @@
         <a href="#">Productos</a>
         <a href="#">Contacto</a>
     </nav>
+<section>
+    <h2>Productos Destacados</h2>
 
-    <section>
-        <h2>Productos Destacados</h2>
-
-        <div class="product">
-            <img src="martillo.jpg" alt="Martillo">
-            <h3>Martillo</h3>
-            <p>Un martillo de alta calidad para todas tus necesidades de construcción y reparación.</p>
-            <p>Precio: S/ 45.00</p>
-            <label for="quantity-martillo">Cantidad:</label>
-            <select id="quantity-martillo" class="quantity-select">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <!-- ... Agrega más opciones según sea necesario ... -->
-            </select>
-            <button class="add-to-cart" onclick="addToCart('Martillo', 45.00, 'quantity-martillo')">Agregar al carrito</button>
-        </div>
-
-        <div class="product">
-            <img src="taladro.jpg" alt="Taladro">
-            <h3>Taladro Eléctrico</h3>
-            <p>Realiza perforaciones precisas con nuestro taladro eléctrico potente y duradero.</p>
-            <p>Precio: S/ 239.99</p>
-            <label for="quantity-taladro">Cantidad:</label>
-            <select id="quantity-taladro" class="quantity-select">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <!-- ... Agrega más opciones según sea necesario ... -->
-            </select>
-            <button class="add-to-cart" onclick="addToCart('Taladro Eléctrico', 239.99, 'quantity-taladro')">Agregar al carrito</button>
-        </div>
-
-        <!-- Agrega más productos según sea necesario -->
-
-    </section>
-
- <script>
-        // Función para agregar productos al carrito
-        function addToCart(productName, price, quantityId) {
-            const quantity = document.getElementById(quantityId).value;
-            const total = price * quantity;
-            
-            // Aquí puedes implementar la lógica para agregar al carrito
-            console.log(`Agregado al carrito: ${quantity} ${productName}(s) - Total: S/ ${total.toFixed(2)}`);
-        }
-    </script>
-
-    <section class="contact-section">
-        <h2>Contacto</h2>
-        <p>
-            ¿Necesitas ayuda o información adicional? ¡Contáctanos en
-            <a href="mailto:info@forgelab.com">info@forgelab.com</a> o llámanos al
-            <a href="tel:+51957447114">+51 957447114</a>.
-        </p>
-        <p>Consulta nuestras <a href="politicas_privacidad.html">Políticas de Privacidad</a>.</p>
-    </section>
-
-    <div class="highlight">
-        <p><strong>Nota:</strong> Esta página es solo un ejemplo y no refleja necesariamente los productos reales de ForgeLab. Asegúrate de personalizarla según tus necesidades.</p>
+    <div class="product">
+        <a href="https://url-imagen1.com" target="_blank">
+            <img src="https://url-imagen1.com" alt="Martillo">
+        </a>
+        <h3>Martillo</h3>
+        <p>Un martillo de alta calidad para todas tus necesidades de construcción y reparación.</p>
+        <p>Precio: S/ 45.00</p>
+        <label for="quantity-martillo">Cantidad:</label>
+        <select id="quantity-martillo" class="quantity-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <!-- ... Agrega más opciones según sea necesario ... -->
+        </select>
+        <button class="add-to-cart" onclick="addToCart('Martillo', 45.00, 'quantity-martillo')">Agregar al carrito</button>
     </div>
 
-    <a href="#" class="view-cart">Ver Carrito de Compras</a>
+    <div class="product">
+        <a href="https://url-imagen2.com" target="_blank">
+            <img src="https://url-imagen2.com" alt="Taladro Eléctrico">
+        </a>
+        <h3>Taladro Eléctrico</h3>
+        <p>Realiza perforaciones precisas con nuestro taladro eléctrico potente y duradero.</p>
+        <p>Precio: S/ 239.99</p>
+        <label for="quantity-taladro">Cantidad:</label>
+        <select id="quantity-taladro" class="quantity-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <!-- ... Agrega más opciones según sea necesario ... -->
+        </select>
+        <button class="add-to-cart" onclick="addToCart('Taladro Eléctrico', 239.99, 'quantity-taladro')">Agregar al carrito</button>
+    </div>
+
+    <!-- Agrega más productos según sea necesario -->
+
+</section>
+<script>
+    function addToCart(productName, price, quantityId) {
+        const quantity = document.getElementById(quantityId).value;
+        const total = price * quantity;
+
+        // Aquí puedes implementar la lógica para agregar al carrito
+        console.log(`Agregado al carrito: ${quantity} ${productName}(s) - Total: S/ ${total.toFixed(2)}`);
+    }
+</script>
+
+<section class="contact-section">
+    <h2>Contacto</h2>
+    <p>
+        ¿Necesitas ayuda o información adicional? ¡Contáctanos en
+        <a href="mailto:info@forgelab.com">info@forgelab.com</a> o llámanos al
+        <a href="tel:+51957447114">+51 957447114</a>.
+    </p>
+    <p>Consulta nuestras <a href="politicas_privacidad.html">Políticas de Privacidad</a>.</p>
+</section>
+
+<div class="highlight">
+    <p><strong>Nota:</strong> Esta página es solo un ejemplo y no refleja necesariamente los productos reales de ForgeLab. Asegúrate de personalizarla según tus necesidades.</p>
+</div>
+
+<a href="#" class="view-cart">Ver Carrito de Compras</a>
 
 </body>
 </html>
