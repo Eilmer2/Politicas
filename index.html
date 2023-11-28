@@ -26,6 +26,25 @@
             color: #007BFF;
         }
 
+        nav {
+            background-color: #343a40;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 4px;
+            background-color: #007BFF;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
         section {
             background-color: #fff;
             padding: 20px;
@@ -97,6 +116,15 @@
             text-decoration: none;
             display: inline-block;
         }
+
+        /* Estilo para el menú desplegable */
+        .quantity-select {
+            padding: 8px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -104,6 +132,12 @@
     <header>
         <h1>ForgeLab - Tu Ferretería de Confianza</h1>
     </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Contacto</a>
+    </nav>
 
     <section>
         <h2>Productos Destacados</h2>
@@ -113,7 +147,14 @@
             <h3>Martillo</h3>
             <p>Un martillo de alta calidad para todas tus necesidades de construcción y reparación.</p>
             <p>Precio: S/ 45.00</p>
-            <button class="add-to-cart">Agregar al carrito</button>
+            <label for="quantity-martillo">Cantidad:</label>
+            <select id="quantity-martillo" class="quantity-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <!-- ... Agrega más opciones según sea necesario ... -->
+            </select>
+            <button class="add-to-cart" onclick="addToCart('Martillo', 45.00, 'quantity-martillo')">Agregar al carrito</button>
         </div>
 
         <div class="product">
@@ -121,43 +162,30 @@
             <h3>Taladro Eléctrico</h3>
             <p>Realiza perforaciones precisas con nuestro taladro eléctrico potente y duradero.</p>
             <p>Precio: S/ 239.99</p>
-            <button class="add-to-cart">Agregar al carrito</button>
-        </div>
-
-        <div class="product">
-            <img src="destornillador.jpg" alt="Destornillador">
-            <h3>Set de Destornilladores</h3>
-            <p>Un conjunto completo de destornilladores para tus proyectos de bricolaje.</p>
-            <p>Precio: S/ 99.90</p>
-            <button class="add-to-cart">Agregar al carrito</button>
+            <label for="quantity-taladro">Cantidad:</label>
+            <select id="quantity-taladro" class="quantity-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <!-- ... Agrega más opciones según sea necesario ... -->
+            </select>
+            <button class="add-to-cart" onclick="addToCart('Taladro Eléctrico', 239.99, 'quantity-taladro')">Agregar al carrito</button>
         </div>
 
         <!-- Agrega más productos según sea necesario -->
-        <div class="product">
-            <img src="sierra.jpg" alt="Sierra Eléctrica">
-            <h3>Sierra Eléctrica</h3>
-            <p>Corta madera y otros materiales con precisión usando nuestra sierra eléctrica.</p>
-            <p>Precio: S/ 549.99</p>
-            <button class="add-to-cart">Agregar al carrito</button>
-        </div>
-
-        <div class="product">
-            <img src="llave_inglesa.jpg" alt="Llave Inglesa">
-            <h3>Llave Inglesa Ajustable</h3>
-            <p>Ajusta tuercas y pernos con facilidad utilizando nuestra llave inglesa ajustable.</p>
-            <p>Precio: S/ 35.50</p>
-            <button class="add-to-cart">Agregar al carrito</button>
-        </div>
-
-        <div class="product">
-            <img src="cinta_metrica.jpg" alt="Cinta Métrica">
-            <h3>Cinta Métrica</h3>
-            <p>Mide con precisión con nuestra cinta métrica resistente y fácil de usar.</p>
-            <p>Precio: S/ 15.99</p>
-            <button class="add-to-cart">Agregar al carrito</button>
-        </div>
 
     </section>
+
+ <script>
+        // Función para agregar productos al carrito
+        function addToCart(productName, price, quantityId) {
+            const quantity = document.getElementById(quantityId).value;
+            const total = price * quantity;
+            
+            // Aquí puedes implementar la lógica para agregar al carrito
+            console.log(`Agregado al carrito: ${quantity} ${productName}(s) - Total: S/ ${total.toFixed(2)}`);
+        }
+    </script>
 
     <section class="contact-section">
         <h2>Contacto</h2>
