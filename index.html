@@ -43,57 +43,101 @@
         }
 
         /* Estilo para el logo */
+        #logo-container {
+            text-align: center;
+        }
+
         #logo {
-            max-width: 100%;
+            max-width: 80%;
             height: auto;
-            display: block;
-            margin: 0 auto 20px; /* Centra el logo */
+            margin: 10px auto; /* Centra el logo */
+        }
+
+        #logo-text {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        /* Estilo para el título */
+        h1 {
+            margin-bottom: 0.5em;
+        }
+
+        /* Estilo para enlaces */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo para sección de contacto */
+        .contact-section {
+            background-color: #e6f7ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        /* Estilo para detalles visuales adicionales */
+        .highlight {
+            background-color: #fff3cd;
+            padding: 10px;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <img id="logo" src="logo.png" alt="Forgelab Logo"> <!-- Reemplaza "logo.png" con el nombre de tu archivo de imagen -->
-        <h1>Política de Privacidad - Forgelab</h1>
+        <div id="logo-container">
+            <img id="logo" src="logo.png" alt="Forgelab Logo">
+            <div id="logo-text">POLÍTICAS DE PRIVACIDAD</div>
+        </div>
+        <h1>Forjando Confianza en Nuestra Ferretería</h1>
     </header>
 
     <section>
         <p>
-            Bienvenido a Forgelab, tu ferretería de confianza. En Forgelab, nos comprometemos a proteger la privacidad de nuestros clientes.
-            Esta política de privacidad explica cómo recopilamos, utilizamos y protegemos la información personal que recopilamos.
+            Bienvenido a Forgelab, tu ferretería de confianza. Nos dedicamos a brindarte productos de calidad y a proteger la privacidad de nuestros clientes.
+            Esta política de privacidad detalla cómo recopilamos, utilizamos y protegemos la información personal que compartes con nosotros.
         </p>
 
         <h2>Información que Recopilamos</h2>
         
         <p>
-            En Forgelab, recopilamos información que nos proporcionas voluntariamente, como tu nombre, dirección y número de teléfono,
-            cuando realizas una compra en nuestra tienda en línea o te registras para recibir actualizaciones y ofertas.
+            En Forgelab, recopilamos información voluntaria como tu nombre, dirección y número de teléfono al realizar compras en línea o al suscribirte para recibir actualizaciones y ofertas.
         </p>
 
         <h2>Uso de la Información</h2>
         
         <p>
-            Utilizamos la información recopilada para procesar tus pedidos, comunicarnos contigo sobre tu compra y proporcionarte información
-            relevante sobre nuestros productos y promociones. Tu información no será compartida con terceros sin tu consentimiento.
+            Utilizamos la información recopilada para procesar tus pedidos, comunicarnos contigo sobre compras y ofrecerte información relevante sobre nuestros productos y promociones.
+            Tu información es tratada con confidencialidad y no será compartida con terceros sin tu consentimiento.
         </p>
 
-        <h2>Seguridad</h2>
+        <h2>Medidas de Seguridad</h2>
         
         <p>
-            En Forgelab, tomamos medidas para proteger la información personal de nuestros clientes. Utilizamos medidas de seguridad
-            para garantizar la confidencialidad de tu información y prevenir accesos no autorizados.
+            La seguridad de tu información es nuestra prioridad. Implementamos medidas de seguridad para garantizar la confidencialidad y prevenir accesos no autorizados.
         </p>
 
         <h2>Contacto</h2>
         
         <p>
-            Si tienes alguna pregunta sobre nuestra política de privacidad, no dudes en ponerte en contacto con nosotros en
-            <a href="mailto:toroeilmer@gmail.com">toroeilmer@gmail.com</a> o llamándonos al <a href="tel:+51957447114">+51 957447114</a>.
+            Si tienes preguntas sobre nuestra política de privacidad, contáctanos en
+            <a href="mailto:info@forgelab.com">info@forgelab.com</a> o llámanos al <a href="tel:+51957447114">+51 957447114</a>.
         </p>
     </section>
 
-    <!-- Agrega más secciones o detalles visuales según sea necesario -->
+    <section class="contact-section">
+        <h2>¿Quieres saber más?</h2>
+        <p>
+            Visita nuestra tienda en línea para descubrir la amplia gama de productos que ofrecemos. ¡Te esperamos en Forgelab!
+        </p>
+        <a href="https://www.forgelab.com" target="_blank">Explora nuestra tienda</a>
+    </section>
+
+    <div class="highlight">
+        <p><strong>Nota:</strong> Esta página es solo un ejemplo y no refleja necesariamente las políticas reales de Forgelab. Asegúrate de personalizarla según tus necesidades.</p>
+    </div>
 
 </body>
 </html>
