@@ -39,6 +39,7 @@
             border-radius: 8px;
             padding: 15px;
             margin-bottom: 20px;
+            text-align: center;
         }
 
         .product img {
@@ -48,9 +49,53 @@
             margin-bottom: 10px;
         }
 
+        .product h3 {
+            color: #007BFF;
+        }
+
         /* Estilo para enlaces */
         a:hover {
             text-decoration: underline;
+        }
+
+        /* Estilo para sección de contacto */
+        .contact-section {
+            background-color: #e6f7ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Estilo para detalles visuales adicionales */
+        .highlight {
+            background-color: #fff3cd;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        /* Estilo para botones */
+        .add-to-cart {
+            background-color: #28a745;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .view-cart {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+            text-decoration: none;
+            display: inline-block;
         }
     </style>
 </head>
@@ -67,31 +112,54 @@
             <img src="martillo.jpg" alt="Martillo">
             <h3>Martillo</h3>
             <p>Un martillo de alta calidad para todas tus necesidades de construcción y reparación.</p>
-            <p>Precio: $15.99</p>
-            <a href="#">Añadir al carrito</a>
+            <p>Precio: S/ 45.00</p>
+            <button class="add-to-cart">Agregar al carrito</button>
         </div>
 
         <div class="product">
             <img src="taladro.jpg" alt="Taladro">
             <h3>Taladro Eléctrico</h3>
             <p>Realiza perforaciones precisas con nuestro taladro eléctrico potente y duradero.</p>
-            <p>Precio: $89.99</p>
-            <a href="#">Añadir al carrito</a>
+            <p>Precio: S/ 239.99</p>
+            <button class="add-to-cart">Agregar al carrito</button>
         </div>
 
         <div class="product">
             <img src="destornillador.jpg" alt="Destornillador">
             <h3>Set de Destornilladores</h3>
             <p>Un conjunto completo de destornilladores para tus proyectos de bricolaje.</p>
-            <p>Precio: $24.99</p>
-            <a href="#">Añadir al carrito</a>
+            <p>Precio: S/ 99.90</p>
+            <button class="add-to-cart">Agregar al carrito</button>
         </div>
 
         <!-- Agrega más productos según sea necesario -->
+        <div class="product">
+            <img src="sierra.jpg" alt="Sierra Eléctrica">
+            <h3>Sierra Eléctrica</h3>
+            <p>Corta madera y otros materiales con precisión usando nuestra sierra eléctrica.</p>
+            <p>Precio: S/ 549.99</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="llave_inglesa.jpg" alt="Llave Inglesa">
+            <h3>Llave Inglesa Ajustable</h3>
+            <p>Ajusta tuercas y pernos con facilidad utilizando nuestra llave inglesa ajustable.</p>
+            <p>Precio: S/ 35.50</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="cinta_metrica.jpg" alt="Cinta Métrica">
+            <h3>Cinta Métrica</h3>
+            <p>Mide con precisión con nuestra cinta métrica resistente y fácil de usar.</p>
+            <p>Precio: S/ 15.99</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+        </div>
 
     </section>
 
-    <section>
+    <section class="contact-section">
         <h2>Contacto</h2>
         <p>
             ¿Necesitas ayuda o información adicional? ¡Contáctanos en
@@ -100,6 +168,12 @@
         </p>
         <p>Consulta nuestras <a href="politicas_privacidad.html">Políticas de Privacidad</a>.</p>
     </section>
+
+    <div class="highlight">
+        <p><strong>Nota:</strong> Esta página es solo un ejemplo y no refleja necesariamente los productos reales de ForgeLab. Asegúrate de personalizarla según tus necesidades.</p>
+    </div>
+
+    <a href="#" class="view-cart">Ver Carrito de Compras</a>
 
 </body>
 </html>
